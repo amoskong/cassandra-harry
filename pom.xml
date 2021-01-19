@@ -31,7 +31,7 @@
 
     <modules>
         <module>harry-core</module>
-        <module>harry-integration</module>
+	<!-- <module>harry-integration</module> -->
         <module>harry-integration-external</module>
     </modules>
 
