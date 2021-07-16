@@ -43,8 +43,8 @@ runner:
     round_robin_validator_threads: 1
     recent_partition_validator_threads: 1
 
-run_time: 2
-run_time_unit: "HOURS"
+run_time: 1
+run_time_unit: "MINUTES"
 
 # System under test: a Cassandra node or cluster. Default implementation is in_jvm (in-jvm DTest cluster).
 # Harry also supports external clusters.

@@ -70,8 +70,7 @@ public abstract class Runner
         if (config.create_schema)
         {
             // TODO: make RF configurable or make keyspace DDL configurable
-            run.sut.schemaChange("CREATE KEYSPACE " + run.schemaSpec.keyspace + " WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 3};");
-
+            run.sut.schemaChange("CREATE KEYSPACE " + run.schemaSpec.keyspace + " WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};");
             run.sut.schemaChange(String.format("DROP TABLE IF EXISTS %s.%s;",
                                           run.schemaSpec.keyspace,
                                           run.schemaSpec.table));
